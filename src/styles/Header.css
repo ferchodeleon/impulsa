@@ -1,0 +1,88 @@
+header {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Avenir';
+  font-weight: bold;
+  font-size: 1.4rem;
+  z-index: 10;
+  color: #fff;
+}
+
+.header-logo {
+  width: 15%;
+}
+
+.header-logo img {
+  width: 90%;
+}
+
+.header-menu {
+  width: 65%;
+}
+
+.header-menu nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.header-menu nav ul a {
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.header-menu nav ul a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D1BAD5;
+  transform: scaleX(0);
+  border-radius: 25px;
+  transform-origin: left;
+  transition: transform 0.5s ease-out;
+  z-index: -1;
+  text-decoration: underline;
+}
+
+.header-menu nav ul a:hover::before {
+  transform: scaleX(1);
+}
+
+.header-menu nav ul a li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.header-menu nav ul a li span {
+  margin-right: 10px;
+}
+
+.header-menu__img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header-menu__img img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes start {
+  0% {
+    transform: translate(0%);
+  }
+
+  100% {
+    transform: translate(100%);
+  }
+}

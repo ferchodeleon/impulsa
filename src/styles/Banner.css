@@ -1,0 +1,55 @@
+.swiper {
+  width: 100%;
+  height: 950px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background-color: #FFF;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #FFF;
+  margin: 0 3rem;
+}
+
+.banner1 {
+  position: relative;
+}
+
+.banner1 p {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: #FFF;
+  font-size: 5rem;
+  width: 926px;
+  text-align: start;
+  font-family: 'Avenir';
+}
+
+.banner1-strong {
+  font-weight: bold;
+}
+
+.banner1-background {
+  border-radius: 25px;
+  background-color: #D1BAD5;
+  padding: 0 20px;
+  color:  #E73F29;
+}
