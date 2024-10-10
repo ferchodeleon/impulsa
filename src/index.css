@@ -7,3 +7,8 @@ body {
   font-family: 'Avenir';
   src: url('./assets/fonts/Avenir.ttc');
 }
+
+@font-face {
+  font-family: 'Atelier';
+  src: url('./assets/fonts/Atelier.ttf');
+}
