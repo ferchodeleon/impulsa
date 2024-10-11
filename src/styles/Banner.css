@@ -53,3 +53,19 @@
   padding: 0 20px;
   color:  #E73F29;
 }
+
+.banner3 p {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: var(--red);
+  font-family: 'Avenir';
+  font-size: 5rem;
+  max-width: 60%;
+  text-align: start;
+}
+
+.banner3 .change-color {
+  color: var(--purple);
+  font-weight: bold;
+}
