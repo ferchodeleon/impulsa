@@ -6,9 +6,11 @@ import "swiper/css/navigation";
 import Banner1 from "../assets/images/banner1.jpg";
 import Banner2 from "../assets/images/banner2.jpg";
 import Banner3 from "../assets/images/banner3.jpg";
+import BirreteRed from "../assets/images/birrete-red.png";
+
 import "../styles/Banner.css";
 
-import { Keyboard, Pagination, Navigation } from "swiper/modules";
+import { Keyboard, Pagination, Navigation, Autoplay } from "swiper/modules";
 
 export const Banner = () => {
   return (
@@ -21,7 +23,10 @@ export const Banner = () => {
         navigation={true}
         modules={[Keyboard, Pagination, Navigation]}
         className="banner-swiper"
-        autoplay={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
       >
         <SwiperSlide className="banner1">
           <img src={Banner1} alt="Imagen una mujer con un birrete" />
@@ -31,8 +36,19 @@ export const Banner = () => {
             negocios.
           </p>
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="banner2">
           <img src={Banner2} alt="Banner con fecha de la feria" />
+          <div className="info-section-date">
+            <img src={BirreteRed} alt="Imagen en rojo de un birrete" />
+            <div>
+              <p className="info-date">Nov 31 - Dic 01</p>
+              <p>
+                Auditorio encuentros
+                <br />
+                Bogotá Colombia
+              </p>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide className="banner3">
           <img src={Banner3} alt="Banner con fecha de la feria" />

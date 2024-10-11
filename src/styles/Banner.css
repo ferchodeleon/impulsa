@@ -54,6 +54,43 @@
   color:  #E73F29;
 }
 
+.banner2 {
+  position: relative;
+}
+
+.info-section-date {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  padding: 1rem 2rem;
+  background-color: #FFF;
+  border-radius: 35px;
+}
+
+.info-section-date img {
+  max-width: 80px;
+}
+
+.info-section-date div {
+  padding-left: 2rem;
+}
+
+.info-section-date div p:nth-child(2) {
+  font-family: 'Avenir';
+  font-size: 3.2rem;
+  color: var(--purple);
+  line-height: 45px;
+}
+
+.info-date {
+  color: var(--red);
+  font-family: 'Avenir';
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
 .banner3 p {
   position: absolute;
   top: 40%;
