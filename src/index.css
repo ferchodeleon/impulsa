@@ -1,3 +1,9 @@
+:root {
+  --purple: #D1BAD5;
+  --white: #FFF;
+  --red: #E74029;
+}
+
 body {
   padding: 0;
   box-sizing: border-box;
