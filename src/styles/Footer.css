@@ -1,3 +1,62 @@
 footer {
   background-color: #E73F29;
+  background-image: url('../assets/images/background-footer.png');
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  max-width: 70%;
+}
+
+.footer-information h2 {
+  font-family: 'Atelier';
+  max-width: 90%;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.footer-information div span {
+  margin-right: 10px;
+}
+
+.footer-information div {
+  display: flex;
+  align-items: center;
+}
+
+.footer-information div p {
+  font-family: 'Atelier';
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.footer-information div p a {
+  color: var(--white);
+  text-decoration: none
+}
+
+.footer-icon img {
+  width: 25px;
+  object-fit: contain;
+}
+
+.footer-logo {
+  text-align: end;
+}
+
+.footer-logo p {
+  color: var(--white);
+  font-family: 'Atelier';
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 45%;
 }
