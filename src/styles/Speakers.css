@@ -1,0 +1,44 @@
+.speakers-container {
+  background-color: var(--red);
+}
+
+.speakers-container > div {
+  margin: 0 auto;
+  padding: 3rem 0;
+  width: 80%;
+}
+
+.speakers-title {
+  font-family: 'Atelier';
+  font-size: 3rem;
+  color: var(--red);
+  background-color: var(--white);
+  max-width: fit-content;
+  padding: .5rem 1.5rem;
+  border-radius: 15px;
+}
+
+.speakers-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+}
+
+.speakers-image > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.speakers-image div {
+  width: 30%;
+  height: 75%;
+  background-color: var(--white);
+  border: 1px solid #000;
+  border-radius: 50px;
+  overflow: hidden;
+  object-position: center;
+}
