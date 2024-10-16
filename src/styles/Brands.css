@@ -1,0 +1,38 @@
+.brands-container {
+  background-color: var(--white);
+  padding: 2rem 0;
+}
+
+.brands-section {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.brands-section h2 {
+  display: inline-block;
+  font-family: 'Atelier';
+  font-weight: 400;
+  font-size: 2.8rem;
+  background-color: var(--purple);
+  color: var(--red);
+  border-radius: 25px;
+  padding: .7rem 2rem;
+  margin: 2rem 0;
+  width: fit-content;
+}
+
+.brands-images {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 70%;
+  margin: 2.5rem auto;
+}
+
+.brands-images-container {
+  background-color: var(--red);
+  border-radius: 100%;
+  width: 12rem;
+  height: 12rem;
+}
