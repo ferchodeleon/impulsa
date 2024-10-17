@@ -1,0 +1,55 @@
+.map-container {
+  background-image: url('../assets/images/background-map.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.map-section {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.map-section h2 {
+  font-family: 'Atelier';
+  font-size: 3rem;
+  font-weight: 400;
+  background-color: var(--red);
+  color: var(--purple);
+  padding: .5rem 1.2rem;
+  width: fit-content;
+  border-radius: 25px;
+}
+
+.map {
+  display: grid;
+  justify-content: center;
+  border-radius: 25px;
+  margin-top: 3rem;
+}
+
+.map iframe {
+  width: 60vw;
+  height: 50vh;
+  border: 0;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.map-info {
+  display: flex;
+}
+
+.map-info p {
+  font-family: 'Atelier';
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--red);
+  margin-bottom: 1rem;
+  span {
+    font-family: 'Avenir';
+    font-size: 1.2rem;
+    margin-left: 10px;
+    font-weight: 500;
+  }
+}
