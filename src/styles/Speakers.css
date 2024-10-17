@@ -31,14 +31,36 @@
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+  object-position: top;
 }
 
-.speakers-image div {
+.speakers-image > div {
   width: 30%;
   height: 75%;
+}
+
+.speakers-image-container {
+  width: 100%;
+  height: 95%;
   background-color: var(--white);
   border: 1px solid #000;
   border-radius: 50px;
   overflow: hidden;
   object-position: center;
 }
+
+.speakers-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: top;
+}
+
+.speakers-name {
+  font-family: 'Atelier';
+  color: var(--white);
+  margin-top: .5rem;
+  margin-left: 2rem;
+}
+
