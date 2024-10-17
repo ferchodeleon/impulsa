@@ -38,8 +38,8 @@
   bottom: 20%;
   left: 10%;
   color: #FFF;
-  font-size: 5rem;
-  width: 926px;
+  font-size: 3vw;
+  width: 50vw;
   text-align: start;
   font-family: 'Avenir';
 }
@@ -75,7 +75,7 @@
 }
 
 .info-section-date img {
-  max-width: 80px;
+  max-width: 5rem;
 }
 
 .info-section-date div {
@@ -98,12 +98,12 @@
 
 .banner3 p {
   position: absolute;
-  top: 40%;
+  top: 55%;
   left: 10%;
   color: var(--red);
   font-family: 'Avenir';
-  font-size: 5rem;
-  max-width: 60%;
+  font-size: 3vw;
+  max-width: 50vw;
   text-align: start;
 }
 
@@ -114,4 +114,19 @@
 .banner3 .change-color {
   color: var(--purple);
   font-weight: bold;
+}
+
+@media (max-width: 1300px) {
+  .info-section-date img {
+    max-width: 4rem;
+  }
+
+  .info-date {
+    font-size: 2rem;
+  }
+
+  .info-section-date div p:nth-child(2) {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
 }
