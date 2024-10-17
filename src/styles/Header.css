@@ -25,6 +25,10 @@ header {
   width: 65%;
 }
 
+.header-menu nav {
+  max-width: 70%;
+}
+
 .header-menu nav ul {
   display: flex;
   justify-content: space-around;
