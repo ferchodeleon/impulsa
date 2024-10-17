@@ -1,0 +1,91 @@
+.info-container {
+  position: relative;
+  background-color:var(--purple);
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 55%;
+}
+
+.info-section div {
+  width: 20rem;
+}
+
+.info-section div img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.decoratino-info {
+  position: absolute;
+  top: 2rem;
+  left: -4.5rem;
+  width: 25rem;
+}
+
+.info-exhibition {
+  display: grid;
+  justify-items: center;
+  margin-top: 4.5rem;
+}
+
+.info-quantity {
+  padding-top: 1.5rem;
+  font-family: 'Atelier';
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+ .info-description {
+  color: #FFF;
+  font-family: 'Avenir';
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.8rem;
+  height: 5rem;
+  max-width: 90%;
+}
+
+.info-video {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-color: var(--purple);
+}
+
+.info-video-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: var(--white);
+  width: 50%;
+  height: 50vh;
+  border-radius: 80px;
+}
+
+.icon-right {
+  right: 4%;
+}
+
+.icon-left {
+  left: 4%;
+}
+
+.icon-right, .icon-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6%;
+}
+
+.info-video-container video {
+  max-width: 70%;
+  max-height: 75%;
+}
