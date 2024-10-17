@@ -59,6 +59,10 @@
   position: relative;
 }
 
+.banner2 img {
+  object-position: left;
+}
+
 .info-section-date {
   display: flex;
   align-items: center;
@@ -101,6 +105,10 @@
   font-size: 5rem;
   max-width: 60%;
   text-align: start;
+}
+
+.banner3 img {
+  object-position: right;
 }
 
 .banner3 .change-color {
