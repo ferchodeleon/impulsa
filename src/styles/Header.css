@@ -1,3 +1,7 @@
+.burger {
+  display: none;
+}
+
 header {
   display: flex;
   position: absolute;
@@ -106,5 +110,121 @@ header {
 
   .header-menu nav ul a{
     margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-logo img {
+    z-index: 3;
+    max-width: 30%;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 3rem;
+    z-index: 4;
+    right: 30px;
+    width: 88px;
+    height: 88px;
+    background: url("../assets/icons/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+
+  .burger.open {
+    background-image: url('../assets/icons/close.svg');
+    margin-right: 0;
+  }
+
+  .burger.open,
+  .header-menu {
+    position: fixed;
+  }
+
+  .header-background {
+    position: fixed;
+    z-index: 2;
+    top: 44px;
+    left: 0%;
+    aspect-ratio: 1 / 1;
+    translate: -20vh -165vh;
+    height: 88px;
+    background: #07030a;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.6s;
+  }
+
+  .header-background.open {
+    height: 300vh;
+    opacity: 0.85;
+  }
+
+  .header-menu {
+    z-index: 3;
+    top: 180px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.05s;
+  }
+
+  .header-menu nav ul a {
+    margin-bottom: 2rem;
+  }
+
+  .header-menu a {
+    transition: 0.5s;
+  }
+
+  .header-menu nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-left: 100px;
+    width: 90%;
+  }
+
+  .header-menu.open {
+    right: 110px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header-menu nav ul:hover li>a {
+    opacity: 0.25;
+  }
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      translate: 0 30px;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .appear {
+    animation: appear 0.35s backwards;
   }
 }
