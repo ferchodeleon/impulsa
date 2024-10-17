@@ -2,7 +2,7 @@ header {
   display: flex;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: calc(100% - 2.5rem);
   margin: 1.5rem;
   align-items: center;
   justify-content: space-between;
@@ -22,11 +22,7 @@ header {
 }
 
 .header-menu {
-  width: 65%;
-}
-
-.header-menu nav {
-  max-width: 70%;
+  margin-right: 5rem;
 }
 
 .header-menu nav ul {
@@ -88,5 +84,27 @@ header {
 
   100% {
     transform: translate(100%);
+  }
+}
+
+@media (max-width: 1300px) {
+  .header-menu nav {
+    max-width: 100%;
+  }
+
+  .header-menu nav ul a li {
+    font-size: 1.2rem;
+  }
+
+  .header-logo {
+    width: 20%;
+  }
+
+  .header-menu {
+    margin-right: 2rem;
+  }
+
+  .header-menu nav ul a{
+    margin-right: 1.5rem;
   }
 }
