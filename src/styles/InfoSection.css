@@ -23,7 +23,7 @@
   position: absolute;
   top: 2rem;
   left: -4.5rem;
-  width: 25rem;
+  width: 20vw;
 }
 
 .info-exhibition {
@@ -42,7 +42,7 @@
  .info-description {
   color: #FFF;
   font-family: 'Avenir';
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
   line-height: 1.8rem;
@@ -88,4 +88,27 @@
 .info-video-container video {
   max-width: 70%;
   max-height: 75%;
+}
+
+@media (max-width: 1300px) {
+
+  .info-section {
+    width: 70%;
+  }
+
+  .info-quantity {
+    font-size: 2.2rem;
+  }
+
+  .info-description {
+    font-size: 1.2rem;
+  }
+
+  .info-video {
+    height: 60vh;
+  }
+
+  .info-video-container {
+    width: 65%;
+  }
 }
