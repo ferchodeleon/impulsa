@@ -41,7 +41,7 @@ export const Banner = () => {
           <div className="info-section-date">
             <img src={BirreteRed} alt="Imagen en rojo de un birrete" />
             <div>
-              <p className="info-date">Nov 31 - Dic 01</p>
+              <p className="info-date">Nov 30 - Dic 01</p>
               <p>
                 Auditorio encuentros
                 <br />
