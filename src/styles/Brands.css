@@ -25,14 +25,21 @@
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   width: 70%;
   margin: 2.5rem auto;
 }
 
 .brands-images-container {
-  background-color: var(--red);
+  border: 1px solid #000;
   border-radius: 100%;
-  width: 12rem;
-  height: 12rem;
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+}
+
+.brands-images-container img {
+  width: 100%;
+  object-position: center;
+  object-fit: contain;
 }
