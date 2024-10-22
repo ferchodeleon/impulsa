@@ -21,12 +21,13 @@ import Postreros from "../assets/brands/Postreros.jpg";
 import Preciada from "../assets/brands/Preciada.jpg";
 import Sonia from "../assets/brands/Sonia.jpg";
 import Thermo from "../assets/brands/Thermo.jpg";
-import Wale from "../assets/brands/Wale.jpg";
+import Wale from "../assets/brands/WaleSong.jpg";
 import Hesed from "../assets/brands/Hesed.jpg";
+import SouvenirsFactory from "../assets/brands/SouvenirsFactory.jpg";
 
 export const Brands = () => {
   return (
-    <section className="brands-container">
+    <section id="marcas" className="brands-container">
       <div className="brands-section">
         <h2>Marcas Participantes:</h2>
         <div className="brands-images">
@@ -101,6 +102,9 @@ export const Brands = () => {
           </div>
           <div className="brands-images-container">
             <img src={Hesed} />
+          </div>
+          <div className="brands-images-container">
+            <img src={SouvenirsFactory} />
           </div>
         </div>
       </div>
