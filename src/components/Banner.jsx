@@ -16,6 +16,7 @@ export const Banner = () => {
   return (
     <>
       <Swiper
+        id="banner"
         slidesPerView={1}
         spaceBetween={30}
         keyboard={{ enabled: true }}
@@ -45,7 +46,7 @@ export const Banner = () => {
               <p>
                 Auditorio encuentros
                 <br />
-                Bogotá Colombia
+                Bogotá, Colombia
               </p>
             </div>
           </div>
@@ -54,7 +55,7 @@ export const Banner = () => {
           <img src={Banner3} alt="Banner con fecha de la feria" />
           <p>
             <span className="change-color">Somos la feria que visibiliza</span>{" "}
-            los empresarios que marcan la diferencia en el mundo empresarial.
+            a los empresarios que marcan la diferencia en el mundo empresarial.
           </p>
         </SwiperSlide>
       </Swiper>
