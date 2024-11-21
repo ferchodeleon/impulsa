@@ -41,14 +41,6 @@ export const Header = () => {
                 ¿Quiénes somos?
               </li>
             </a>
-            {/* <a style={{ animationDelay: "0.4s" }} href="#speakers">
-              <li onClick={onCloseMenu}>
-                <span className="header-menu__img">
-                  <img src={Separator} alt="Icon Impulsa" />
-                </span>
-                Conferencistas
-              </li>
-            </a> */}
             <a style={{ animationDelay: "0.3s" }} href="#marcas">
               <li onClick={onCloseMenu}>
                 <span className="header-menu__img">
