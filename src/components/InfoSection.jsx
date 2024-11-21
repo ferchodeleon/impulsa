@@ -2,7 +2,6 @@ import Exhibition from "../assets/images/exhibition.png";
 import Stand from "../assets/images/stand.png";
 import Attendants from "../assets/images/attendants.png";
 import Categories from "../assets/images/categories.png";
-import Speakers from "../assets/images/speakers.png";
 import DecorationInfo from "../assets/images/decoration-info.png";
 import IconBittereRed from "../assets/images/icon-birrete-red.png";
 import VideoImpulsa from "../assets/FERIA IMPULSA-VF.mp4";
@@ -11,7 +10,7 @@ import "../styles/InfoSection.css";
 export const InfoSection = () => {
   return (
     <>
-      <section className="info-container">
+      <section id="whatisimpulsa" className="info-container">
         <img
           className="decoratino-info"
           src={DecorationInfo}
@@ -25,8 +24,8 @@ export const InfoSection = () => {
           </div>
           <div className="info-exhibition">
             <img src={Stand} />
-            <p className="info-quantity">70</p>
-            <p className="info-description">Stands disponibles</p>
+            <p className="info-quantity">47</p>
+            <p className="info-description">Marcas participantes</p>
           </div>
           <div className="info-exhibition">
             <img src={Attendants} />
@@ -35,13 +34,8 @@ export const InfoSection = () => {
           </div>
           <div className="info-exhibition">
             <img src={Categories} />
-            <p className="info-quantity">10</p>
-            <p className="info-description">Categorias comerciales</p>
-          </div>
-          <div className="info-exhibition">
-            <img src={Speakers} />
-            <p className="info-quantity">3</p>
-            <p className="info-description">Conferencistas</p>
+            <p className="info-quantity">+10</p>
+            <p className="info-description">Categorías comerciales</p>
           </div>
         </div>
       </section>

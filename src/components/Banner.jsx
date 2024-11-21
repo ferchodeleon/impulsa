@@ -22,7 +22,7 @@ export const Banner = () => {
         keyboard={{ enabled: true }}
         pagination={{ clickable: true }}
         navigation={true}
-        modules={[Keyboard, Pagination, Navigation]}
+        modules={[Keyboard, Pagination, Navigation, Autoplay]}
         className="banner-swiper"
         autoplay={{
           delay: 5000,

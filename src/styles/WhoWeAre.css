@@ -27,3 +27,33 @@
   font-size: 2.5rem;
   font-family: 'Avenir';
 }
+
+@media (max-width: 1300px) {
+  .whoweare-container {
+    padding-top: 2rem;
+  }
+
+  .whoweare-title {
+    font-size: 2.8rem;
+  }
+
+  .whoweare-description {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .whoweare-description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .whoweare-title {
+    font-size: 1.8rem;
+  }
+  
+  .whoweare-description {
+    font-size: 1.6rem;
+  }
+}

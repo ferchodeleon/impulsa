@@ -3,7 +3,7 @@ import "../styles/Speakers.css";
 export const Speakers = () => {
   return (
     <>
-      <section className="speakers-container">
+      <section id="speakers" className="speakers-container">
         <div>
           <h2 className="speakers-title">Conoce nuestros conferencistas</h2>
           <div className="speakers-image">

@@ -25,7 +25,15 @@ export const Header = () => {
       <div className={`header-menu ${isOpen}`}>
         <nav>
           <ul>
-            <a style={{ animationDelay: `0.${2}s` }}>
+            <a style={{ animationDelay: `0.${2}s` }} href="#whatisimpulsa">
+              <li onClick={onCloseMenu}>
+                <span className="header-menu__img">
+                  <img src={Separator} alt="Icon Impulsa" />
+                </span>
+                ¿Qué es Impulsa?
+              </li>
+            </a>
+            <a style={{ animationDelay: `0.${2}s` }} href="#whoweare">
               <li onClick={onCloseMenu}>
                 <span className="header-menu__img">
                   <img src={Separator} alt="Icon Impulsa" />
@@ -33,28 +41,28 @@ export const Header = () => {
                 ¿Quiénes somos?
               </li>
             </a>
-            <a style={{ animationDelay: "0.3s" }}>
-              <li>
-                <span className="header-menu__img">
-                  <img src={Separator} alt="Icon Impulsa" />
-                </span>
-                Agenda
-              </li>
-            </a>
-            <a style={{ animationDelay: "0.4s" }}>
-              <li>
+            {/* <a style={{ animationDelay: "0.4s" }} href="#speakers">
+              <li onClick={onCloseMenu}>
                 <span className="header-menu__img">
                   <img src={Separator} alt="Icon Impulsa" />
                 </span>
                 Conferencistas
               </li>
-            </a>
-            <a style={{ animationDelay: "0.5s" }}>
-              <li>
+            </a> */}
+            <a style={{ animationDelay: "0.3s" }} href="#marcas">
+              <li onClick={onCloseMenu}>
                 <span className="header-menu__img">
                   <img src={Separator} alt="Icon Impulsa" />
                 </span>
-                Quiero ser expositor
+                Marcas
+              </li>
+            </a>
+            <a style={{ animationDelay: "0.5s" }} href="#map">
+              <li onClick={onCloseMenu}>
+                <span className="header-menu__img">
+                  <img src={Separator} alt="Icon Impulsa" />
+                </span>
+                ¿Cómo llegar?
               </li>
             </a>
           </ul>

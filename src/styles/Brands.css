@@ -24,7 +24,7 @@
 .brands-images {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(6rem, 1fr));
   gap: 1rem;
   width: 70%;
   margin: 2.5rem auto;
@@ -42,4 +42,20 @@
   width: 100%;
   object-position: center;
   object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+  .brands-images {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .brands-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .brands-images {
+    grid-template-columns: repeat(2, minmax(6rem, 1fr));
+  }
 }

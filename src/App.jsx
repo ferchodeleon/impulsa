@@ -5,7 +5,6 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { InfoSection } from "./components/InfoSection";
 import { Map } from "./components/Map";
-import { Speakers } from "./components/Speakers";
 import { Up } from "./components/Up";
 import { WhoWeAre } from "./components/WhoWeAre";
 
@@ -16,7 +15,6 @@ function App() {
       <Banner />
       <InfoSection />
       <WhoWeAre />
-      <Speakers />
       <Brands />
       <Map />
       <Footer />

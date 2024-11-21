@@ -112,7 +112,7 @@
 }
 
 .banner3 .change-color {
-  color: var(--purple);
+  color: #FFF;
   font-weight: bold;
 }
 
@@ -128,5 +128,40 @@
   .info-section-date div p:nth-child(2) {
     font-size: 1.8rem;
     line-height: 1.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper {
+    height: 90vh;
+  }
+
+  .banner1 p {
+    font-size: 1.5rem;
+    width: 70%;
+    bottom: 1rem;
+    text-align: center;
+    left: auto;
+  }
+
+  .info-date {
+    font-size: 1.5rem;
+  }
+
+  .info-section-date div p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .banner3 p {
+    font-size: 1.5rem;
+    max-width: 90vw;
+    bottom: 1rem;
+    left: auto;
+    top: auto;
+    text-align: center;
   }
 }

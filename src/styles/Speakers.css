@@ -64,3 +64,25 @@
   margin-left: 2rem;
 }
 
+@media (max-width: 500px) {
+  .speakers-title {
+    font-size: 1.8rem;
+  }
+
+  .speakers-image {
+    display: inline-block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .speakers-image > div {
+    width: 90%;
+    margin: 0 auto;
+    height: 80%;
+  }
+
+  .speakers-image-container {
+    height: 80%;
+    border-radius: 10px;
+  }
+}

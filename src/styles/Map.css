@@ -53,3 +53,23 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 1000px) {
+  .map iframe {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .map-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .map {
+    margin-top: 2rem;
+  }
+
+  .map iframe {
+    width: 90vw;
+  }
+}

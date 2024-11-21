@@ -1,0 +1,39 @@
+.up-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  opacity: 0;
+  animation: show 1s;
+}
+
+.up-container button {
+  background-color: transparent;
+  border: none;
+}
+
+.up-container.show {
+  opacity: 1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .up-container {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .up-container img {
+    width: 150%;
+  }
+}
