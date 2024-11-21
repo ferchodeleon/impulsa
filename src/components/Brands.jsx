@@ -24,7 +24,6 @@ import Thermo from "../assets/brands/Thermo.jpg";
 import Wale from "../assets/brands/WaleSong.jpg";
 import Hesed from "../assets/brands/Hesed.jpg";
 import SouvenirsFactory from "../assets/brands/SouvenirsFactory.jpg";
-import SPCooperativa from "../assets/brands/SP-cooperativa.jpg";
 import CoffeeJesus from "../assets/brands/coffee.jpg";
 import SPRadio from "../assets/brands/SP-radio.jpg";
 
@@ -108,9 +107,6 @@ export const Brands = () => {
           </div>
           <div className="brands-images-container">
             <img src={SouvenirsFactory} />
-          </div>
-          <div className="brands-images-container">
-            <img src={SPCooperativa} />
           </div>
           <div className="brands-images-container">
             <img src={CoffeeJesus} />
