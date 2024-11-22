@@ -1,3 +1,7 @@
+.swiper {
+  height: 20vh;
+}
+
 .brands-container {
   background-color: var(--white);
   padding: 2rem 0;
@@ -19,15 +23,6 @@
   padding: .7rem 2rem;
   margin: 2rem 0;
   width: fit-content;
-}
-
-.brands-images {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(5, minmax(6rem, 1fr));
-  gap: 1rem;
-  width: 70%;
-  margin: 2.5rem auto;
 }
 
 .brands-images-container {

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -53,14 +53,18 @@ export const Brands = () => {
     <section id="marcas" className="brands-container">
       <div className="brands-section">
         <h2>Marcas Participantes:</h2>
-        <div className="brands-images">
+        <div>
           <Swiper
             slidesPerView={6}
             spaceBetween={30}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
             pagination={{
               clickable: true,
             }}
-            modules={[Pagination, Navigation]}
+            modules={[Autoplay, Pagination, Navigation]}
             className="mySwiper"
           >
             <SwiperSlide>
