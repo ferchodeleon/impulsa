@@ -22,11 +22,6 @@
 }
 
 .brands-images {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(5, minmax(6rem, 1fr));
-  gap: 1rem;
-  width: 70%;
   margin: 2.5rem auto;
 }
 
