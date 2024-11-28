@@ -47,15 +47,35 @@ import Patiya from "../assets/brands/patiya.jpg";
 import LeoDuran from "../assets/brands/leo_duran.jpg";
 import Juliana from "../assets/brands/juliana.jpg";
 import ColombiaLiving from "../assets/brands/colombia_living.jpg";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export const Brands = () => {
+  const [screenWith, setScreenWith] = useState(window.innerWidth);
+
+  const changeScreen = () => setScreenWith(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", changeScreen);
+
+    return () => window.removeEventListener("resize", changeScreen);
+  }, []);
+
+  console.log(window.innerWidth);
   return (
     <section id="marcas" className="brands-container">
       <div className="brands-section">
         <h2>Marcas Participantes:</h2>
         <div>
           <Swiper
-            slidesPerView={6}
+            style={{ height: "20vh" }}
+            slidesPerView={
+              screenWith > 1200
+                ? 6
+                : screenWith < 1200 && screenWith > 900
+                ? 4
+                : 2
+            }
             spaceBetween={30}
             autoplay={{
               delay: 1000,
