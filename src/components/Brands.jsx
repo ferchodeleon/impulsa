@@ -241,6 +241,9 @@ export const Brands = () => {
             <div className="brands-images-container">
               <img src={ColombiaLiving} />
             </div>
+            <div className="brands-images-container">
+              <img src={DayCompany} />
+            </div>
           </Swiper>
         </div>
       </div>
