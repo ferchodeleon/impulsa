@@ -39,6 +39,17 @@ export const InfoSection = () => {
           </div>
         </div>
       </section>
+      <section className="info-schedule info-container">
+        <div>
+          <h3 className="info-schedule-title">Horarios</h3>
+          <p className="info-schedule-descrip">
+            Sábado de 10:00 a.m. a 8:00 p.m
+          </p>
+          <p className="info-schedule-descrip">
+            Domingo de 8:00 a.m. a 2:00 p.m
+          </p>
+        </div>
+      </section>
       <section className="info-video">
         <div className="info-video-container">
           <img

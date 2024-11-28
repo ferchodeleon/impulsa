@@ -1,54 +1,12 @@
+import { useEffect } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
 import "../styles/Brands.css";
-import Heloim from "../assets/brands/Heloim.jpg";
-import Bywc from "../assets/brands/ByW.jpg";
-import Aroma from "../assets/brands/aroma.jpg";
-import Asosalud from "../assets/brands/Asosalud.jpg";
-import Boxdes from "../assets/brands/Boxdes.jpg";
-import Brave from "../assets/brands/Brave.jpg";
-import Ceahi from "../assets/brands/Ceahi.jpg";
-import CrushCookies from "../assets/brands/CrushCookies.jpg";
-import Fileo from "../assets/brands/Fileo.jpg";
-import Forgive from "../assets/brands/Forgive.jpg";
-import LifeOn from "../assets/brands/Life-on.jpg";
-import Lizzeto from "../assets/brands/Lizzeto.jpg";
-import Lykke from "../assets/brands/Lykke.jpg";
-import ImageMR from "../assets/brands/MR.jpg";
-import Ojala from "../assets/brands/Ojala.jpg";
-import ParejaFinanzas from "../assets/brands/ParejaFinanzas.jpg";
-import Perfect from "../assets/brands/Perfect.jpg";
-import Pomposa from "../assets/brands/Pomposa.jpg";
-import Postreros from "../assets/brands/Postreros.jpg";
-import Preciada from "../assets/brands/Preciada.jpg";
-import Sonia from "../assets/brands/Sonia.jpg";
-import Thermo from "../assets/brands/Thermo.jpg";
-import Wale from "../assets/brands/WaleSong.jpg";
-import Hesed from "../assets/brands/Hesed.jpg";
-import SouvenirsFactory from "../assets/brands/SouvenirsFactory.jpg";
-import CoffeeJesus from "../assets/brands/coffee.jpg";
-import SPRadio from "../assets/brands/SP-radio.jpg";
-import Tribu from "../assets/brands/tribu.jpg";
-import LaPuerta from "../assets/brands/la_puerta.jpg";
-import EscuchandoCielo from "../assets/brands/escuchando_del_cielo.jpg";
-import DayCompany from "../assets/brands/day_company.jpg";
-import Anbu from "../assets/brands/anbu.jpg";
-import GoldFemme from "../assets/brands/gold_femme.jpg";
-import Hilos from "../assets/brands/hilos.jpg";
-import Property from "../assets/brands/property.jpg";
-import Shimex from "../assets/brands/shimex.jpg";
-import MarcelaDios from "../assets/brands/marcela_dios.jpg";
-import Mana from "../assets/brands/mana.jpg";
-import Sln from "../assets/brands/sln.jpg";
-import Patiya from "../assets/brands/patiya.jpg";
-import LeoDuran from "../assets/brands/leo_duran.jpg";
-import Juliana from "../assets/brands/juliana.jpg";
-import ColombiaLiving from "../assets/brands/colombia_living.jpg";
-import { useEffect } from "react";
-import { useState } from "react";
+import brands from "../assets/brands/brands";
 
 export const Brands = () => {
   const [screenWith, setScreenWith] = useState(window.innerWidth);
@@ -60,8 +18,6 @@ export const Brands = () => {
 
     return () => window.removeEventListener("resize", changeScreen);
   }, []);
-
-  console.log(window.innerWidth);
   return (
     <section id="marcas" className="brands-container">
       <div className="brands-section">
@@ -89,160 +45,160 @@ export const Brands = () => {
           >
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Heloim} />
+                <img src={brands.Heloim} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Bywc} />
+                <img src={brands.Bywc} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Aroma} />
+                <img src={brands.Aroma} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Asosalud} />
+                <img src={brands.Asosalud} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Boxdes} />
+                <img src={brands.Boxdes} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Brave} />
+                <img src={brands.Brave} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Ceahi} />
+                <img src={brands.Ceahi} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={CrushCookies} />
+                <img src={brands.CrushCookies} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Fileo} />
+                <img src={brands.Fileo} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Forgive} />
+                <img src={brands.Forgive} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={LifeOn} />
+                <img src={brands.LifeOn} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Lizzeto} />
+                <img src={brands.Lizzeto} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={Lykke} />
+                <img src={brands.Lykke} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="brands-images-container">
-                <img src={ImageMR} />
+                <img src={brands.ImageMR} />
               </div>
             </SwiperSlide>
             <div className="brands-images-container">
-              <img src={Ojala} />
+              <img src={brands.Ojala} />
             </div>
             <div className="brands-images-container">
-              <img src={ParejaFinanzas} />
+              <img src={brands.ParejaFinanzas} />
             </div>
             <div className="brands-images-container">
-              <img src={Perfect} />
+              <img src={brands.Perfect} />
             </div>
             <div className="brands-images-container">
-              <img src={Pomposa} />
+              <img src={brands.Pomposa} />
             </div>
             <div className="brands-images-container">
-              <img src={Postreros} />
+              <img src={brands.Postreros} />
             </div>
             <div className="brands-images-container">
-              <img src={Preciada} />
+              <img src={brands.Preciada} />
             </div>
             <div className="brands-images-container">
-              <img src={Sonia} />
+              <img src={brands.Sonia} />
             </div>
             <div className="brands-images-container">
-              <img src={Thermo} />
+              <img src={brands.Thermo} />
             </div>
             <div className="brands-images-container">
-              <img src={Wale} />
+              <img src={brands.Wale} />
             </div>
             <div className="brands-images-container">
-              <img src={Hesed} />
+              <img src={brands.Hesed} />
             </div>
             <div className="brands-images-container">
-              <img src={SouvenirsFactory} />
+              <img src={brands.SouvenirsFactory} />
             </div>
             <div className="brands-images-container">
-              <img src={CoffeeJesus} />
+              <img src={brands.CoffeeJesus} />
             </div>
             <div className="brands-images-container">
-              <img src={SPRadio} />
+              <img src={brands.SPRadio} />
             </div>
             <div className="brands-images-container">
-              <img src={Tribu} />
+              <img src={brands.Tribu} />
             </div>
             <div className="brands-images-container">
-              <img src={LaPuerta} />
+              <img src={brands.LaPuerta} />
             </div>
             <div className="brands-images-container">
-              <img src={EscuchandoCielo} />
+              <img src={brands.EscuchandoCielo} />
             </div>
             <div className="brands-images-container">
-              <img src={Anbu} />
+              <img src={brands.Anbu} />
             </div>
             <div className="brands-images-container">
-              <img src={GoldFemme} />
+              <img src={brands.GoldFemme} />
             </div>
             <div className="brands-images-container">
-              <img src={Hilos} />
+              <img src={brands.Hilos} />
             </div>
             <div className="brands-images-container">
-              <img src={Property} />
+              <img src={brands.Property} />
             </div>
             <div className="brands-images-container">
-              <img src={Shimex} />
+              <img src={brands.Shimex} />
             </div>
             <div className="brands-images-container">
-              <img src={MarcelaDios} />
+              <img src={brands.MarcelaDios} />
             </div>
             <div className="brands-images-container">
-              <img src={Mana} />
+              <img src={brands.Mana} />
             </div>
             <div className="brands-images-container">
-              <img src={Sln} />
+              <img src={brands.Sln} />
             </div>
             <div className="brands-images-container">
-              <img src={Patiya} />
+              <img src={brands.Patiya} />
             </div>
             <div className="brands-images-container">
-              <img src={LeoDuran} />
+              <img src={brands.LeoDuran} />
             </div>
             <div className="brands-images-container">
-              <img src={Juliana} />
+              <img src={brands.Juliana} />
             </div>
             <div className="brands-images-container">
-              <img src={ColombiaLiving} />
+              <img src={brands.ColombiaLiving} />
             </div>
             <div className="brands-images-container">
-              <img src={DayCompany} />
+              <img src={brands.DayCompany} />
             </div>
           </Swiper>
         </div>

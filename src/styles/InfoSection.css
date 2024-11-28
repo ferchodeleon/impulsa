@@ -90,6 +90,26 @@
   max-height: 75%;
 }
 
+.info-schedule {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.info-schedule-title {
+  font-family: 'Atelier';
+  font-size: 2.5rem;
+}
+
+.info-schedule-descrip {
+  font-family: 'Avenir';
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
 @media (max-width: 1500px) {
 
   .info-section {

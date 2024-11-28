@@ -1,0 +1,21 @@
+img {
+  border-radius: 25px;
+}
+
+.stand-title {
+  font-family: 'Atelier';
+}
+
+.stand-description, .stand-number {
+  margin: 0 !important;
+  margin-bottom: 1px;
+}
+
+.stand-description {
+  font-family: 'Atelier';
+}
+
+.stand-number {
+  font-family: 'Avenir';
+  font-size: 0.6rem;
+}

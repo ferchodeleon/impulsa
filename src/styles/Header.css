@@ -7,7 +7,7 @@ header {
   position: absolute;
   top: 0;
   width: calc(100% - 2.5rem);
-  margin: 1.5rem;
+  padding: 1.5rem;
   align-items: center;
   justify-content: space-between;
   font-family: 'Avenir';
@@ -15,6 +15,7 @@ header {
   font-size: 1.4rem;
   z-index: 10;
   color: #fff;
+  z-index: 500;
 }
 
 .header-logo {

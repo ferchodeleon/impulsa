@@ -1,25 +1,24 @@
-import "./App.css";
-import { Banner } from "./components/Banner";
-import { Brands } from "./components/Brands";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { Home } from "./components/Home";
+import InteractiveMap from "./components/InteractiveMap";
 import { Footer } from "./components/Footer";
+
+import "./App.css";
 import { Header } from "./components/Header";
-import { InfoSection } from "./components/InfoSection";
-import { Map } from "./components/Map";
-import { Up } from "./components/Up";
-import { WhoWeAre } from "./components/WhoWeAre";
 
 function App() {
   return (
-    <main style={{ position: "relative" }}>
-      <Header />
-      <Banner />
-      <InfoSection />
-      <WhoWeAre />
-      <Brands />
-      <Map />
-      <Footer />
-      <Up />
-    </main>
+    <>
+      <Router>
+        <Header backgroundColor="#E74029" />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/stands" element={<InteractiveMap />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 
